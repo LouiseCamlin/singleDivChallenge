@@ -1,0 +1,60 @@
+div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+
+    width: 200px;
+    height: 220px;
+    margin-left: 500px;
+    margin-top: 110px;
+
+    background-image: 
+        radial-gradient(#E7900D, #E7900D 5%, #E08515 75%, #E08515 5%);
+    border-radius: 50%;
+    box-shadow: 
+        -35px 3px 0 -8px rgba(0,0,0,0.1), 
+        -60px 0 0 #e08515, 
+        -85px 3px 0 -5px rgba(0,0,0,0.1), 
+        -110px 0 0 #e7900D,
+        25px 3px 0 -8px rgba(0,0,0,0.1), 
+        60px 0 0 #e08515, 
+        85px 3px 0 -5px rgba(0,0,0,0.1), 
+        110px 0 0 #e7900D;
+  
+}
+
+div::before {
+    content: "" ;
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 65px;
+    left: 80px;
+    top: -45px; 
+    background-color: #463304;
+    border-radius: 10px 10px 0 0;
+    background-size: 100px;
+    z-index: -1;
+}
+
+div::after {
+    content: "";
+    display: block;
+    position: relative;
+    width: 200px;
+    top: -65px;
+    height: 200px;
+    background-image: 
+        radial-gradient(ellipse,black 60%,transparent 40%), 
+        radial-gradient(ellipse,black 60%,transparent 40%),
+        radial-gradient(ellipse,#e6900f 50%,transparent 50%),
+        radial-gradient(ellipse,#e6900f 50%,transparent 50%),
+        radial-gradient(ellipse,#e6900f 50%,transparent 50%),
+        radial-gradient(ellipse,black 50%, transparent 50%);
+    background-size: 40px 70px, 40px 68px, 26px 25px, 26px 30px, 26px 25px, 150px 50px;
+    background-position: 30% 20%, 70% 20%, 60px 145px,90px 120px,105px 120px, 25px 120px;
+    background-repeat: no-repeat;
+}
